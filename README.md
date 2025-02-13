@@ -96,11 +96,21 @@ Keystone: An Open Framework for Architecting Trusted Execution Environments
 ### 4. 세분화된 TCB 구성 허용
 - 각 사용 사례에 맞는 최소 TCB를 설정해 맞춤형 TEE를 구성
 
-> **pmp** : 
+> **pmp(Physical Memory Protection)** :  RISC-V 아키텍처에서 제공하는 물리 메모리 접근 제어 기법
+
 --------------------------------
 
+### 2.2 Keystone Enclave workflow
 
+1. **플랫폼 제공자 준비**: 플랫폼 제공자는 적합한 하드웨어 사양 및 보안 확장을 설정하여 SM을 초기화
 
+2. **인클레이브 개발자 준비**: 인클레이브 개발자는 Keystone 도구와 라이브러리를 사용하여 eapp과 RT를 작성
+
+3. **eapp 개발**: 개발자는 eapp의 필요한 기능을 구현 및 실행 환경을 설정, 요구 사항을 기반으로 애플리케이션 최적화
+
+4. **SM과 RT 상호작용**: RT는 SM의 SBI 호출을 통해 시스템의 기능을 사용할 수 있지만, RT는 SM이 제공하는 보안 격리 보장을 변경할 수 없음 
+
+5. **eapp 배포**: eapp이 완성되면, 해당 인클레이브 애플리케이션을 배포하고 실행합니다.
 
 
 
