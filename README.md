@@ -108,9 +108,8 @@ Keystone: An Open Framework for Architecting Trusted Execution Environments
 
 3. **eapp 개발**: 개발자는 eapp의 필요한 기능을 구현 및 실행 환경을 설정, 요구 사항을 기반으로 애플리케이션 최적화
 
-4. **SM과 RT 상호작용**: RT는 SM의 SBI 호출을 통해 시스템의 기능을 사용할 수 있지만, RT는 SM이 제공하는 보안 격리 보장을 변경할 수 없음 
+~~RT는 SM의 SBI 호출을 통해 시스템의 기능을 사용할 수 있지만, RT는 SM이 제공하는 보안 격리 보장을 변경할 수 없음~~ 
 
-5. **eapp 배포**: eapp이 완성되면, 해당 인클레이브 애플리케이션을 배포하고 실행합니다.
 
 
 
